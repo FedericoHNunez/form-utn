@@ -1,0 +1,109 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+}
+*, *:beofore, *:after {
+    box-sizing: inherit;
+    position: relative;
+}
+
+label {
+    margin: 1rem;
+}   
+input, select, textarea {
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+radiogroup {
+    display: flex;
+
+    
+}
+
+
+.centrar{
+    text-align: center;
+}
+
+main {
+     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    }
+
+ .formulario legend{
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 1rem ;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+.formulario {
+    background-color: lightblue;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 70rem;
+    
+}
+
+.formulario-contenido {
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.formulario-botones
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.boton{
+    padding: 1rem;
+    margin: 1rem;
+    background-color:antiquewhite;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.formulario-contenido input[type="text"],
+.formulario-contenido input[type="radio"],
+.formulario-contenido input[type="email"],
+.formulario-contenido input[type="password"],
+.formulario-contenido input[type="number"],
+.formulario-contenido select {
+    width: 90%;
+    padding: .5rem;
+    margin: 1rem;
+    border: none;
+    border-radius: .5rem;
+}
+
+.formulario-contenido textarea {
+    width: 100%;
+    padding: .5rem;
+    border: none;
+    border-radius: .5rem;
+    width: 90%;
+}

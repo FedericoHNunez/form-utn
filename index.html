@@ -1,45 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
         <!-- configuraciones de SEO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta viewport="width=device-width, initial-scale=1.0"><!-- configuración de viewport inicial escala 1*1  -->
     <meta name="description" content="descripcion de la pagina"><!-- despcripcion de la pagina  -->
-    <link preload href="normalize.css" as="style">
-    <link rel="stylesheet" href="normalize.css">
-    <link preload href="index.css" as="style">
-    <link rel="stylesheet" href="index.css">
+    <link preload href="./normalize.css" as="style">
+    <link rel="stylesheet" href="./normalize.css">
+    <link preload href="./style.css" as="style">
+    <link rel="stylesheet" href="./style.css">
     <title>Registration Form</title>
 </head>
 <body>
     <header>    
-        <h1>Registration Form</h1>
     </header>
     <main>
-        <form action="">
+        <h1 class="centrar">Registration Form</h1>
+        <form action="" class="formulario">
                 <legend>Personal Information:</legend>
-                <div>
+                <div class="formulario-contenido">
                     <label for="Firstname">First Name:</label>
                     <input type="text" id="Firstname" name="Firstname" required>               
                 </div>
-                <div>
+                <div class="formulario-contenido">
                     <label for="LastName">Last Name:</label>
                     <input type="text" id="LastName" name="LastName" required>
                 </div>
                 
-                <div>
+                <div class="formulario-contenido">
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
                 </div>
                 
-                <div>
+                <div class="formulario-contenido">
                     <label for="password">Password:</label>
                     <input type="password" id="password" name="password" required>
                 </div>
                 
-                <div>    
-                    <legend>Gender:</legend>
+                <div class="formulario-contenido">    
+                    <label for="gender">Gender:</label>
                     <radiogroup>
                         <label for="male">Male</label>
                         <input type="radio" id="male" name="gender" value="male">
@@ -49,22 +49,24 @@
                         <input type="radio" id="other" name="gender" value="other">
                     </radiogroup>
                 </div> 
-                <div>
+                <div class="formulario-contenido">
                     <label for="age">Age:</label>
                     <input type="number" id="age" name="age" min="0" max="120" step="1" required>
                 </div>                     
-                <div>
-                    <legend>Preferences:</legend>
-                    <label for="acriliPainting">Acrilic Painting:</label>
-                    <input type="checkbox" id="acriliPainting" name="acrilicPainting">
-                    <label for="oilPainting">Oil Painting:</label>
-                    <input type="checkbox" id="oilPainting" name="oilPainting">
-                    <label for="watercolorPainting">Watercolor Painting:</label>            
-                    <input type="checkbox" id="watercolorPainting" name="watercolorPainting">
+                <div class="formulario-contenido">
+                    <label for="preferences">Preferences:</label>
+                    <div>
+                            <label for="acriliPainting">Acrilic Painting:</label>
+                            <input type="checkbox" id="acriliPainting" name="acrilicPainting"> 
+                            <label for="oilPainting">Oil Painting:</label>
+                            <input type="checkbox" id="oilPainting" name="oilPainting">
+                            <label for="watercolorPainting">Watercolor Painting:</label>
+                            <input type="checkbox" id="watercolorPainting" name="watercolorPainting">
+                    </div>
                 </div>
-                <div>   
+                <div class="formulario-contenido">   
                     <label for="occupation">Occupation:</label>
-                    <select id="occupation" name="occupation" required>
+                    <select class="formulario-contenido" id="occupation" name="occupation" required>
                         <option value="student">Student</option>
                         <option value="professional">Professional</option>
                         <option value="unemployed">Unemployed</option>
@@ -72,13 +74,14 @@
                         <option value="select an option" selected disabled>Select an option</option>   
                     </select>
                 </div>
-                <div>
+                <div class="formulario-contenido">
                     <label for="bio">Bio:</label>
                     <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Tell us about yourself..."></textarea>
                 </div>
-       
-            <button type="reset">Reset</button>
-            <button type="submit">Register</button>
+                <div class="formulario-botones">
+                    <button class="boton" type="reset">Reset</button>
+                    <button class="boton" type="submit">Register</button>
+                </div>
         </form>
     </main>
 
